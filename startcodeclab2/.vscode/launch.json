@@ -1,0 +1,125 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Challenge",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debugchallenge.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod url",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make debugchallenge"
+        },
+        {
+            "name": "memtest",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debugchallenge.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod url",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make memtest"
+        },
+        {
+            "name": "all",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debugchallenge.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod url",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make all"
+        },
+        {
+            "name": "clean",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debugchallenge.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod url",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make all"
+        }
+    ]
+}
