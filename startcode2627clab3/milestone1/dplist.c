@@ -35,6 +35,7 @@ dplist_t *dpl_create(// callback functions
 ) {
     dplist_t *list;
     list = malloc(sizeof(struct dplist));
+    assert(list != NULL);
     list->head = NULL;
     list->element_copy = element_copy;
     list->element_free = element_free;
