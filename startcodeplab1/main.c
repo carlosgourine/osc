@@ -6,7 +6,6 @@
 #include <time.h>
 
 int main(){
-    printf("Hello World\n");
 
     FILE * map = fopen("room_sensor.map", "r");
     FILE * data = fopen("sensor_data", "rb");
@@ -15,7 +14,6 @@ int main(){
     if(data == NULL) return -1;
 
     datamgr_parse_sensor_files(map, data);
-
     datamgr_free();
 
     fclose(map);
